@@ -25,10 +25,9 @@ app.use("/api/cart", cartRouter);
 
 const port = process.env.PORT || 4000;
 
-app.get('/api/test', (req, res) => {
-  res.json({ message: 'API is working!' });
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
 });
-
 
 // Start the server
 app.listen(port, () => {
