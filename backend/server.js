@@ -24,6 +24,12 @@ app.use("/api/users", userRouter);
 app.use("/api/cart", cartRouter);
 
 const port = process.env.PORT || 4000;
+
+app.get('/api/test', (req, res) => {
+  res.json({ message: 'API is working!' });
+});
+
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
