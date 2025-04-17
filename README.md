@@ -54,7 +54,7 @@ npm install
 Create a `.env` file:  
 ```env
 PORT=4000
-MONGO_URI=mongodb+srv://<username>:<password>@cluster0.example.mongodb.net/forever_fashion?retryWrites=true&w=majority
+MONGO_URI= your mongodb uri
 JWT_SECRET=your_jwt_secret_here
 STRIPE_SECRET_KEY=your_stripe_secret_key_here
 ```
